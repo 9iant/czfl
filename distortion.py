@@ -33,6 +33,7 @@ def undistort(img,undistX,undistY):
     return cv2.remap(img,undistX,undistY,cv2.INTER_LINEAR)
 
 
+
 undistX, undistY = get_undistparams()
 
 cam = cv2.VideoCapture(0)
